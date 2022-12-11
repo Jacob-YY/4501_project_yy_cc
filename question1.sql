@@ -1,0 +1,1 @@
+select strftime('%H',pickup_datetime) AS cur_hour,count(*) as num from taxi_trips GROUP BY cur_hour order by num desc;

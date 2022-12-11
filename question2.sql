@@ -1,0 +1,1 @@
+select strftime('%w',pickup_datetime) AS cur_weekday,count(*) as num from uber_trips GROUP BY cur_weekday order by num desc;
